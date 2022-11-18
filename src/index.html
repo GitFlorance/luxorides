@@ -9,7 +9,7 @@
     <header class="header">
         <div class="container">
             <div class="logo">
-                <img src="./images/logo.png">
+                <img src="./images/logo.png" alt="logo">
             </div>
             <nav class="menu">
                 <ul>
@@ -34,7 +34,7 @@
                     В нашем клубе имеется солидная коллекция спортивных автомобилей — от достаточно распространенных серийных машин до настоящего гоночного эксклюзива. Воспользуйтесь уникальной возможностью побывать за рулем настоящей легенды и узнать, на что она способна за пределами гоночной трассы!
                 </div>
                 <div class="main-action">
-                    <button class="button">Посмотреть автомобили</button>
+                    <button class="button" id="main-action">Посмотреть автомобили</button>
                 </div>
             </div>
         </div>
@@ -44,7 +44,7 @@
             <h2 class="sub-title">Наш автопарк</h2>
             <div class="car-items">
                 <div class="car-item">
-                    <div class="menu-item-image">
+                    <div class="car-item-image">
                         <img src="images/1.png" alt="image 1">
                     </div>
                     <div class="car-item-title">Lamborghini Huracan Spyder</div>
@@ -66,11 +66,11 @@
                         </div>
                     </div>
                     <div class="car-item-action">
-                        <button class="button">Забронировать</button>
+                        <button class="button car-button">Забронировать</button>
                     </div>
                 </div>
                 <div class="car-item">
-                    <div class="menu-item-image">
+                    <div class="car-item-image">
                         <img src="images/2.png" alt="image 2">
                     </div>
                     <div class="car-item-title">Chevrolet Corvette</div>
@@ -92,11 +92,11 @@
                         </div>
                     </div>
                     <div class="car-item-action">
-                        <button class="button">Забронировать</button>
+                        <button class="button car-button">Забронировать</button>
                     </div>
                 </div>
                 <div class="car-item">
-                    <div class="menu-item-image">
+                    <div class="car-item-image">
                         <img src="images/3.png" alt="image 3">
                     </div>
                     <div class="car-item-title">Ferrari California</div>
@@ -118,11 +118,11 @@
                         </div>
                     </div>
                     <div class="car-item-action">
-                        <button class="button">Забронировать</button>
+                        <button class="button car-button">Забронировать</button>
                     </div>
                 </div>
                 <div class="car-item">
-                    <div class="menu-item-image">
+                    <div class="car-item-image">
                         <img src="images/4.png" alt="image 4">
                     </div>
                     <div class="car-item-title">Lamborghini Urus</div>
@@ -144,11 +144,11 @@
                         </div>
                     </div>
                     <div class="car-item-action">
-                        <button class="button">Забронировать</button>
+                        <button class="button car-button">Забронировать</button>
                     </div>
                 </div>
                 <div class="car-item">
-                    <div class="menu-item-image">
+                    <div class="car-item-image">
                         <img src="images/5.png" alt="image 5">
                     </div>
                     <div class="car-item-title">Audi R8</div>
@@ -170,11 +170,11 @@
                         </div>
                     </div>
                     <div class="car-item-action">
-                        <button class="button">Забронировать</button>
+                        <button class="button car-button">Забронировать</button>
                     </div>
                 </div>
                 <div class="car-item">
-                    <div class="menu-item-image">
+                    <div class="car-item-image">
                         <img src="images/6.png" alt="image 6">
                     </div>
                     <div class="car-item-title">Chevrolet Camaro</div>
@@ -196,11 +196,11 @@
                         </div>
                     </div>
                     <div class="car-item-action">
-                        <button class="button">Забронировать</button>
+                        <button class="button car-button">Забронировать</button>
                     </div>
                 </div>
                 <div class="car-item">
-                    <div class="menu-item-image">
+                    <div class="car-item-image">
                         <img src="images/7.png" alt="image 7">
                     </div>
                     <div class="car-item-title">Maserati Quattroporte</div>
@@ -222,11 +222,11 @@
                         </div>
                     </div>
                     <div class="car-item-action">
-                        <button class="button">Забронировать</button>
+                        <button class="button car-button">Забронировать</button>
                     </div>
                 </div>
                 <div class="car-item">
-                    <div class="menu-item-image">
+                    <div class="car-item-image">
                         <img src="images/8.png" alt="image 8">
                     </div>
                     <div class="car-item-title">Dodge Challenger </div>
@@ -248,11 +248,11 @@
                         </div>
                     </div>
                     <div class="car-item-action">
-                        <button class="button">Забронировать</button>
+                        <button class="button car-button">Забронировать</button>
                     </div>
                 </div>
                 <div class="car-item">
-                    <div class="menu-item-image">
+                    <div class="car-item-image">
                         <img src="images/9.png" alt="image 9">
                     </div>
                     <div class="car-item-title">Nissan GT-R </div>
@@ -274,7 +274,7 @@
                         </div>
                     </div>
                     <div class="car-item-action">
-                        <button class="button">Забронировать</button>
+                        <button class="button car-button">Забронировать</button>
                     </div>
                 </div>
             </div>
@@ -287,10 +287,10 @@
                 Заполните данные, и мы перезвоним вам для уточнения всех деталей бронирования
             </div>
             <form action="" class="price-form">
-                <input type="text" class="price-input" placeholder="Ваше имя">
-                <input type="text" class="price-input" placeholder="Ваш телефон">
-                <input type="text" class="price-input" placeholder="Автомобиль, который вас интересует">
-                <button class="button">Узнать цену</button>
+                <input type="text" class="price-input" id="name" placeholder="Ваше имя">
+                <input type="text" class="price-input" id="phone" placeholder="Ваш телефон">
+                <input type="text" class="price-input" id="car" placeholder="Автомобиль, который вас интересует">
+                <button class="button" id="price-action" type="button">Узнать цену</button>
             </form>
             <img class="price-image" src="images/rolls.png" alt="rolls">
         </div>
@@ -298,10 +298,12 @@
     <footer class="footer">
         <div class="container">
             <div class="logo">
-                <img src="./images/logo.png">
+                <img src="./images/logo.png" alt="logo">
             </div>
             <div class="rights">Все права защищены</div>
         </div>
     </footer>
+
+    <script src="scripts/index.js"></script>
 </body>
 </html>
